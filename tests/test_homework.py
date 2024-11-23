@@ -1,3 +1,4 @@
+
 """Autograding script."""
 
 import pickle
@@ -20,7 +21,7 @@ def test_01():
     with open("homework/mlp.pickle", "rb") as file:
         mlp = pickle.load(file)
 
-    with open("features_scaler.pickle", "rb") as file:
+    with open("homework/features_scaler.pickle", "rb") as file:
         features_scaler = pickle.load(file)
 
     standarized_dataset = features_scaler.transform(dataset)
